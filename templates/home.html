@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css')}}">
+</head>
+<style>
+    .full{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("{{ url_for('static', filename='image/pic.jpg')}}");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+</style>
+<body>
+    <div class="full">
+        <div class="sec">
+            <h1>Welcome to <span title="All Christian Campus Felloowship Conference">ACCFC</span> 2022 Pre-registration page</h1>
+            <form action="/home" method="POST">
+                <button type="submit"><a href="/index">Register Here</a></button>
+            </form>
+        </div>
+        <marquee behavior="" direction="">Welcome to ACCF 2022 Pre-registration page. Accomodation is free, Feeding is free. Call: 08033920834, 0703334570 for more enquiries.</marquee>
+    </div>
+</body>
+</html>
